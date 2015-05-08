@@ -1,0 +1,119 @@
+
+{
+	gl.supports_vertex_array_object: true
+	cocos2d.x.version: quick-cocos2d-x 3.3
+	gl.vendor: Intel Inc.
+	gl.supports_PVRTC: false
+	gl.renderer: Intel HD Graphics 3000 OpenGL Engine
+	cocos2d.x.compiled_with_profiler: false
+	gl.max_texture_size: 8192
+	gl.supports_ETC1: false
+	gl.supports_BGRA8888: false
+	cocos2d.x.build_type: DEBUG
+	gl.supports_discard_framebuffer: false
+	gl.supports_NPOT: true
+	gl.supports_S3TC: true
+	gl.version: 2.1 INTEL-10.0.19
+	gl.supports_ATITC: false
+	gl.max_texture_units: 16
+	cocos2d.x.compiled_with_gl_state_cache: true
+}
+
+
+Quick-Cocos2d-x C++ support ready.
+------------------------------------------------
+LOAD LUA FILE: /Users/mac/design/cocos2d-x/quick-3.3/quick/samples/mvc/src/main.lua
+------------------------------------------------
+[LUA-print] ===========================================================
+[LUA-print]               LOAD QUICK FRAMEWORK
+[LUA-print] ===========================================================
+[LUA-print] [INFO] 
+[LUA-print] [INFO] # DEBUG                        = 1
+[LUA-print] [INFO] #
+[LUA-print] [INFO] # device.platform              = mac
+[LUA-print] [INFO] # device.model                 = unknown
+[LUA-print] [INFO] # device.language              = cn
+[LUA-print] [INFO] # device.writablePath          = /Users/mac/design/cocos2d-x/quick-3.3/quick/samples/mvc/
+[LUA-print] [INFO] # device.directorySeparator    = /
+[LUA-print] [INFO] # device.pathSeparator         = :
+[LUA-print] [INFO] #
+libpng warning: iCCP: known incorrect sRGB profile
+[LUA-print] [INFO] # CONFIG_SCREEN_AUTOSCALE      = FIXED_HEIGHT
+[LUA-print] [INFO] # CONFIG_SCREEN_WIDTH          = 960.00
+[LUA-print] [INFO] # CONFIG_SCREEN_HEIGHT         = 640.00
+[LUA-print] [INFO] # display.widthInPixels        = 960.00
+[LUA-print] [INFO] # display.heightInPixels       = 640.00
+[LUA-print] [INFO] # display.contentScaleFactor   = 1.00
+[LUA-print] [INFO] # display.width                = 960.00
+[LUA-print] [INFO] # display.height               = 640.00
+[LUA-print] [INFO] # display.cx                   = 480.00
+[LUA-print] [INFO] # display.cy                   = 320.00
+[LUA-print] [INFO] # display.left                 = 0.00
+[LUA-print] [INFO] # display.right                = 960.00
+[LUA-print] [INFO] # display.top                  = 640.00
+[LUA-print] [INFO] # display.bottom               = 0.00
+[LUA-print] [INFO] # display.c_left               = -480.00
+[LUA-print] [INFO] # display.c_right              = 480.00
+[LUA-print] [INFO] # display.c_top                = 320.00
+[LUA-print] [INFO] # display.c_bottom             = -320.00
+[LUA-print] [INFO] #
+[LUA-print] actor player:dualface state change from none to idle
+[LUA-print] actor player:dualface start
+[LUA-print] create player
+[LUA-print] actor enemy:lurenjia state change from none to idle
+[LUA-print] actor enemy:lurenjia start
+[LUA-print] actor enemy:lurenjia state change from none to idle
+[LUA-print] actor enemy:lurenjia start
+[LUA-print] ---- EventProtocol:dumpAllEventListeners() ----
+[LUA-print] -- event: KILL_EVENT
+[LUA-print] --     listener: function: 0x7f914f05f110, handle: 6
+[LUA-print] -- event: CHANGE_STATE_EVENT
+[LUA-print] --     listener: function: 0x7f914f05efd0, handle: 5
+[LUA-print] -- event: HP_CHANGED_EVENT
+[LUA-print] --     listener: function: 0x7f914f05f250, handle: 7
+[LUA-print] -- event: EXP_CHANGED_EVENT
+[LUA-print] --     listener: function: 0x7f914f05f3d0, handle: 8
+[LUA-print] actor enemy:lurenjia state change from none to idle
+[LUA-print] actor enemy:lurenjia start
+[LUA-print] ---- EventProtocol:dumpAllEventListeners() ----
+[LUA-print] -- event: KILL_EVENT
+[LUA-print] --     listener: function: 0x7f914f07d2d0, handle: 10
+[LUA-print] -- event: CHANGE_STATE_EVENT
+[LUA-print] --     listener: function: 0x7f914f085a60, handle: 9
+[LUA-print] -- event: HP_CHANGED_EVENT
+[LUA-print] --     listener: function: 0x7f914f07d3f0, handle: 11
+[LUA-print] -- event: EXP_CHANGED_EVENT
+[LUA-print] --     listener: function: 0x7f914f07d550, handle: 12
+[LUA-print] actor enemy:lurenjia state change from none to idle
+[LUA-print] actor enemy:lurenjia start
+[LUA-print] ---- EventProtocol:dumpAllEventListeners() ----
+[LUA-print] -- event: KILL_EVENT
+[LUA-print] --     listener: function: 0x7f914cf8fe00, handle: 14
+[LUA-print] -- event: CHANGE_STATE_EVENT
+[LUA-print] --     listener: function: 0x7f914cf90c90, handle: 13
+[LUA-print] -- event: HP_CHANGED_EVENT
+[LUA-print] --     listener: function: 0x7f914cf901f0, handle: 15
+[LUA-print] -- event: EXP_CHANGED_EVENT
+[LUA-print] --     listener: function: 0x7f914cf8fb10, handle: 16
+[LUA-print] actor enemy:lurenjia state change from none to idle
+[LUA-print] actor enemy:lurenjia start
+[LUA-print] ---- EventProtocol:dumpAllEventListeners() ----
+[LUA-print] -- event: KILL_EVENT
+[LUA-print] --     listener: function: 0x7f914f096f20, handle: 18
+[LUA-print] -- event: CHANGE_STATE_EVENT
+[LUA-print] --     listener: function: 0x7f914f098e80, handle: 17
+[LUA-print] -- event: HP_CHANGED_EVENT
+[LUA-print] --     listener: function: 0x7f914f07a670, handle: 19
+[LUA-print] -- event: EXP_CHANGED_EVENT
+[LUA-print] --     listener: function: 0x7f914f08acb0, handle: 20
+[LUA-print] actor enemy:lurenjia state change from none to idle
+[LUA-print] actor enemy:lurenjia start
+[LUA-print] ---- EventProtocol:dumpAllEventListeners() ----
+[LUA-print] -- event: KILL_EVENT
+[LUA-print] --     listener: function: 0x7f914cfba8f0, handle: 22
+[LUA-print] -- event: CHANGE_STATE_EVENT
+[LUA-print] --     listener: function: 0x7f914cfba770, handle: 21
+[LUA-print] -- event: HP_CHANGED_EVENT
+[LUA-print] --     listener: function: 0x7f914cfbaa10, handle: 23
+[LUA-print] -- event: EXP_CHANGED_EVENT
+[LUA-print] --     listener: function: 0x7f914cfbab70, handle: 24

@@ -1,0 +1,188 @@
+--
+-- Author: wzg
+-- Date: 2014-12-21 18:03:14
+--
+
+require("lfs")
+
+
+-- local testDownloadUrl = "http://192.168.0.157:8080/XDServer/hhgame1.zip"
+local testDownloadUrl = "http://192.168.0.157:8080/XDServer/res.zip"
+
+-- 初始化配置
+local wp = cc.FileUtils:getInstance():getWritablePath()
+local uploadPath = wp .. "upf/"
+cc.FileUtils:getInstance():addSearchPath(uploadPath)
+
+local versionInfo = nil
+
+
+function os.exists(path)
+    return cc.FileUtils:getInstance():isFileExist(path)
+end
+
+function os.mkdir(path)
+    if not os.exists(path) then
+        return lfs.mkdir(path)
+    end
+    return true
+end
+
+function os.rmdir(path)
+    -- print("os.rmdir:", path)
+    if os.exists(path) then
+        local function _rmdir(path)
+            local iter, dir_obj = lfs.dir(path)
+            while true do
+                local dir = iter(dir_obj)
+                if dir == nil then break end
+                if dir ~= "." and dir ~= ".." then
+                    local curDir = path..dir
+                    local mode = lfs.attributes(curDir, "mode") 
+                    if mode == "directory" then
+                        _rmdir(curDir.."/")
+                    elseif mode == "file" then
+                        os.remove(curDir)
+                    end
+                end
+            end
+            local succ, des = os.remove(path)
+            if des then print(des) end
+            return succ
+        end
+        _rmdir(path)
+    end
+    return true
+end
+
+local function createDownloadDir(path)
+
+--    print("update Path => " .. path)
+    local mkdirResult = os.mkdir(path)
+--    print("update Path => " .. path .. " , mkdirResult => " .. tostring(mkdirResult))
+
+end
+
+local label = nil
+
+
+function updateScene()
+    
+    log("writeble path => " .. uploadPath)
+ 
+    local scene = cc.Scene:create()
+	
+	label = cc.ui.UILabel.new({
+            UILabelType = 2, text = "update, scene", size = 64})
+        :align(display.CENTER, display.cx, display.cy)
+        :addTo(scene)
+
+	display.replaceScene(scene)
+
+
+	createDownloadDir(uploadPath)
+    -- local a = os.rmdir(uploadPath)
+    -- print("remove Path => " .. uploadPath .. " , mkdirResult => " .. tostring(a))
+
+    local function reloadModule( moduleName )
+        log("reload module")
+        -- package.loaded[moduleName] = nil
+        -- return require(moduleName)
+
+        require("app.MyApp").new():run()
+
+    end
+
+
+    local function onError(errorCode)
+        if errorCode == cc.ASSETSMANAGER_NO_NEW_VERSION then
+            label:setString("no new version")
+        elseif errorCode == cc.ASSETSMANAGER_NETWORK then
+            label:setString("network error")
+        end
+    end
+
+    local function onProgress( percent )
+        local progress = string.format("downloading %d%%",percent)
+        label:setString(progress)
+    end
+
+    local function onSuccess()
+        label:setString("downloading ok")
+        reloadModule("")
+    end
+
+    local function getAssetsManager()
+        local assetsManager = nil
+        if nil == assetsManager then
+            assetsManager = cc.AssetsManager:new(testDownloadUrl,
+                                           "http://192.168.0.157:8080/XDServer/version",
+                                           uploadPath)
+            assetsManager:retain()
+            assetsManager:setDelegate(onError, cc.ASSETSMANAGER_PROTOCOL_ERROR )
+            assetsManager:setDelegate(onProgress, cc.ASSETSMANAGER_PROTOCOL_PROGRESS)
+            assetsManager:setDelegate(onSuccess, cc.ASSETSMANAGER_PROTOCOL_SUCCESS )
+            assetsManager:setConnectionTimeout(3)
+        end
+        log("assetsManager => " .. tostring(assetsManager))
+        return assetsManager
+    end
+
+    local function update(sender)
+        -- progressLable:setString("")
+        log("begin to update ")
+        local assertManager = getAssetsManager()
+        assertManager:deleteVersion()
+        assertManager:update()
+    end
+
+    local function onResponse(event, index, dumpResponse)
+        local request = event.request
+        printf("REQUEST %d - event.name = %s", index, event.name)
+        if event.name == "completed" then
+            printf("REQUEST %d - getResponseStatusCode() = %d", index, request:getResponseStatusCode())
+            -- printf("REQUEST %d - getResponseHeadersString() =\n%s", index, request:getResponseHeadersString())
+
+            if request:getResponseStatusCode() ~= 200 then
+            else
+                local responseString = request:getResponseString()
+
+                printf("REQUEST %d - getResponseDataLength() = %d", index, request:getResponseDataLength())
+                printf("REQUEST %d - getResponseString() =\n%s", index, responseString)
+                versionInfo = json.decode(responseString)
+                dump(versionInfo)
+                printf("bigVersion => " .. tostring(versionInfo.bigVersion))
+
+                update()
+            end
+        elseif event.name ~= "progress" then
+            -- printf("REQUEST %d - getErrorCode() = %d, getErrorMessage() = %s", index, request:getErrorCode(), request:getErrorMessage())
+            log("ErrorCode:" .. tostring(request:getErrorCode()))
+            log("ErrowMsg:" .. tostring(request:getErrorMessage()))
+        end
+
+        log("----------------------------------------")
+    end
+
+    local url = "http://192.168.0.157:8080/XDServer/version"
+    local index = 1
+    local request = network.createHTTPRequest(function(event)
+        if tolua.isnull(scene) then
+            printf("REQUEST %d COMPLETED, BUT SCENE HAS QUIT", index)
+            return
+        end
+        onResponse(event, index, true)
+    end, url, "GET")
+    printf("REQUEST START %d", index)
+    request:start()
+
+
+
+
+
+
+
+end
+
+
+

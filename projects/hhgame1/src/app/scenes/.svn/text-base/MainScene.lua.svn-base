@@ -1,0 +1,127 @@
+
+MainScene = class("MainScene", function()
+    return display.newScene("MainScene")
+end)
+
+function MainScene:ctor()
+    display.newSprite("bg/bg_1136.png",display.cx,display.cy):addTo(self)
+
+    cc.ui.UILabel.new({
+            font = FONT_NAME,
+            UILabelType = 2, text = "Hello, World 1235 您好，世界", size = 24})
+        :align(display.CENTER, display.cx, display.cy)
+        :addTo(self)
+
+
+    TypingLabel.new({
+        text = "黄巾abc贼兵就在215前方，我们快追！！！",
+        font = FONT_NAME,
+        size = 34,
+        color = cc.c3b(255, 255, 255), -- 使用纯红色
+        align = cc.TEXT_ALIGNMENT_LEFT,
+        valign = cc.VERTICAL_TEXT_ALIGNMENT_TOP,
+        dimensions = cc.size(700, 300),
+        finishCall = function() 
+            -- printf("打印结束 ")
+            display.replaceScene(FightScene.new())
+        end
+    }):align(display.CENTER, display.cx, display.cy-100)
+        :addTo(self)
+
+
+    local timerLabel = TimerLabel.new({
+        time = 6000,
+        format = "@M:@S",
+        finish = function()
+            printf("倒计时结束 ")
+        end
+    })
+    timerLabel:align(display.LEFT_TOP,50,display.height - 50):addTo(self)
+
+        
+    local function dataLoaded(percent)
+        print("加载回调函数" .. tostring(percent))
+        if percent >= 1 then
+            printf("哈哈  哈哈  哈哈")
+            -- display.replaceScene(FightScene.new())
+        end
+    end
+
+    local manager = ccs.ArmatureDataManager:getInstance()
+    print("战斗加载骨胳  开始")
+    manager:addArmatureFileInfoAsync("armature/act1.ExportJson", dataLoaded)
+    manager:addArmatureFileInfoAsync("armature/tauren.ExportJson", dataLoaded)
+    print("战斗加载骨胳  完成")
+    
+end
+
+function MainScene:onEnter()
+	print(" MainScene onEnter ")
+
+
+local layer = display.newLayer()
+self:addChild(layer)
+layer:setTouchEnabled(true)
+
+layer:setTouchSwallowEnabled(false)
+layer:setTouchMode(cc.TOUCH_MODE_ONE_BY_ONE)
+layer:addNodeEventListener(cc.NODE_TOUCH_EVENT, function (event)
+local x, y, prevX, prevY = event.x, event.y, event.prevX, event.prevY
+ 
+    if event.name == "began" then
+
+        self.pause = self.pause or 0
+        if self.pause == 0 then
+            self.pause = 1
+        else 
+            self.pause = 0
+            -- self.hero:zorder(5)
+        end
+        --setSpeedScale(self.pause)
+        print("layer began x=>"..tostring(x) .. " , y=>"..tostring(y) .. " , prevX=>"..tostring(prevX) .. " , prevY=>" .. tostring(prevY))
+    elseif event.name == "moved" then
+        print("layer moved x=>"..tostring(x) .. " , y=>"..tostring(y) .. " , prevX=>"..tostring(prevX) .. " , prevY=>" .. tostring(prevY))
+    elseif event.name == "ended" then
+        print("layer ended x=>"..tostring(x) .. " , y=>"..tostring(y) .. " , prevX=>"..tostring(prevX) .. " , prevY=>" .. tostring(prevY))
+    end
+        return true
+    end)
+
+
+    layer:addNodeEventListener(cc.NODE_TOUCH_CAPTURE_EVENT, function (event)
+        if event.name == "began" then
+            print("layer capture began")
+        elseif event.name == "moved" then
+            print("layer capture moved")
+        elseif event.name == "ended" then
+            print("layer capture ended")
+        end
+ 
+        return true
+    end)
+	
+end
+
+function MainScene:onExit()
+	print(" MainScene onExit ")
+end
+
+-- return MainScene
+
+    -- local a = {}
+    -- for i=1,10 do
+    --     a[tostring(i)] = false
+    --     logf("%d => %s",i,tostring(a[tostring(i)]))
+    -- end
+    -- a['3'] = true
+    -- a['6'] = true
+    -- a['9'] = true
+
+    -- for i=1,10 do
+    --     local k = a[tostring(i)]
+    --     if k == true then
+    --         continue
+    --     end
+    --     logf("%d => %s",i,tostring(k))
+    -- end
+

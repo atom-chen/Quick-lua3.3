@@ -1,0 +1,32 @@
+
+
+LoginScene = class("LoginScene", function()
+    return display.newScene("LoginScene")
+end)
+
+function LoginScene:ctor()
+	print("LoginScene ctor()")
+
+   	self.label = 1 cc.ui.UILabel.new({
+            UILabelType = 2, text = "Login Scene", size = 64})
+        :align(display.CENTER, display.cx, display.cy)
+        :addTo(self)
+end
+
+function LoginScene:onEnter()
+	print(" LoginScene onEnter ")
+
+	local scheduler  = require("framework.scheduler")
+	self.handle = scheduler.performWithDelayGlobal( function (dt)
+		package.loaded["app.scenes.fightScene"] = nil
+		-- FightScene = nil
+		display.replaceScene(FightScene.new())
+	end, 5) 
+
+end
+
+
+function LoginScene:onExit()
+	print(" LoginScene onExit ")
+end
+

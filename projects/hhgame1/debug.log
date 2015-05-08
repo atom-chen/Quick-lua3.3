@@ -1,0 +1,614 @@
+
+{
+	gl.supports_vertex_array_object: true
+	cocos2d.x.version: quick-cocos2d-x 3.3
+	gl.vendor: Intel Inc.
+	gl.supports_PVRTC: false
+	gl.renderer: Intel HD Graphics 3000 OpenGL Engine
+	cocos2d.x.compiled_with_profiler: false
+	gl.max_texture_size: 8192
+	gl.supports_ETC1: false
+	gl.supports_BGRA8888: false
+	cocos2d.x.build_type: DEBUG
+	gl.supports_discard_framebuffer: false
+	gl.supports_NPOT: true
+	gl.supports_S3TC: true
+	gl.version: 2.1 INTEL-10.0.19
+	gl.supports_ATITC: false
+	gl.max_texture_units: 16
+	cocos2d.x.compiled_with_gl_state_cache: true
+}
+
+
+Quick-Cocos2d-x C++ support ready.
+------------------------------------------------
+LOAD LUA FILE: /Users/mac/design/cocos2d-x/quick-3.3/projects/hhgame1/src/main.lua
+------------------------------------------------
+[LUA-print] ===========================================================
+[LUA-print]               LOAD QUICK FRAMEWORK
+[LUA-print] ===========================================================
+[LUA-print] [INFO] 
+[LUA-print] [INFO] # DEBUG                        = 1
+[LUA-print] [INFO] #
+[LUA-print] [INFO] # device.platform              = mac
+[LUA-print] [INFO] # device.model                 = unknown
+[LUA-print] [INFO] # device.language              = cn
+[LUA-print] [INFO] # device.writablePath          = /Users/mac/design/cocos2d-x/quick-3.3/projects/hhgame1/
+[LUA-print] [INFO] # device.directorySeparator    = /
+[LUA-print] [INFO] # device.pathSeparator         = :
+[LUA-print] [INFO] #
+libpng warning: iCCP: known incorrect sRGB profile
+[LUA-print] [INFO] # CONFIG_SCREEN_AUTOSCALE      = FIXED_HEIGHT
+[LUA-print] [INFO] # CONFIG_SCREEN_WIDTH          = 960.00
+[LUA-print] [INFO] # CONFIG_SCREEN_HEIGHT         = 640.00
+[LUA-print] [INFO] # display.widthInPixels        = 960.00
+[LUA-print] [INFO] # display.heightInPixels       = 640.00
+[LUA-print] [INFO] # display.contentScaleFactor   = 1.00
+[LUA-print] [INFO] # display.width                = 960.00
+[LUA-print] [INFO] # display.height               = 640.00
+[LUA-print] [INFO] # display.cx                   = 480.00
+[LUA-print] [INFO] # display.cy                   = 320.00
+[LUA-print] [INFO] # display.left                 = 0.00
+[LUA-print] [INFO] # display.right                = 960.00
+[LUA-print] [INFO] # display.top                  = 640.00
+[LUA-print] [INFO] # display.bottom               = 0.00
+[LUA-print] [INFO] # display.c_left               = -480.00
+[LUA-print] [INFO] # display.c_right              = 480.00
+[LUA-print] [INFO] # display.c_top                = 320.00
+[LUA-print] [INFO] # display.c_bottom             = -320.00
+[LUA-print] [INFO] #
+[LUA-print] ######### phone platform begin #########
+[LUA-print] ######### phone platform end #########
+[LUA-print] dump from: [string "app/data/ZhenXing.lua"]:57: in main chunk
+[LUA-print] - "<var>" = {
+[LUA-print] -     "x" = 380
+[LUA-print] -     "y" = 140
+[LUA-print] - }
+[LUA-print]  MainScene onEnter 
+[LUA-print] socket time:1423771581.355
+[LUA-print] call back 1 .  msg readString => aaa
+[LUA-print] call back 2 ,  msg readString -> bbb
+[LUA-print] call back 3 ,  msg readString => cccc
+[LUA-print] SocketTCP connect success
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	48
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 041 123 231 172 172 049 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 049 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	45
+[LUA-print] msg len :	41
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print] test3
+[LUA-print] 8
+[LUA-print] 8
+[LUA-print] 4
+[LUA-print] 4
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	48
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 041 123 231 172 172 050 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 050 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	45
+[LUA-print] msg len :	41
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	48
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 041 123 231 172 172 051 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 051 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	45
+[LUA-print] msg len :	41
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	48
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 041 123 231 172 172 052 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 052 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	45
+[LUA-print] msg len :	41
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	48
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 041 123 231 172 172 053 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 053 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	45
+[LUA-print] msg len :	41
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	48
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 041 123 231 172 172 054 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 054 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	45
+[LUA-print] msg len :	41
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	48
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 041 123 231 172 172 055 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 055 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	45
+[LUA-print] msg len :	41
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	48
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 041 123 231 172 172 056 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 056 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	45
+[LUA-print] msg len :	41
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	48
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 041 123 231 172 172 057 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 057 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	45
+[LUA-print] msg len :	41
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 049 048 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 049 048 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+cocos2d: SpriteBatchNode: resizing TextureAtlas capacity from [30] to [41].
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	100
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 049 049 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 049 049 093 032 100 097 116 097 093 032 125 008 000 008 000 000 000 043 123 231 172 172 049 050 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 049 050 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	97
+[LUA-print] msg len :	43
+[LUA-print] available:	50
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 049 050 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 049 050 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 049 051 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 049 051 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	100
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 049 052 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 049 052 093 032 100 097 116 097 093 032 125 008 000 008 000 000 000 043 123 231 172 172 049 053 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 049 053 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	97
+[LUA-print] msg len :	43
+[LUA-print] available:	50
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 049 053 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 049 053 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	100
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 049 054 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 049 054 093 032 100 097 116 097 093 032 125 008 000 008 000 000 000 043 123 231 172 172 049 055 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 049 055 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	97
+[LUA-print] msg len :	43
+[LUA-print] available:	50
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 049 055 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 049 055 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	100
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 049 056 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 049 056 093 032 100 097 116 097 093 032 125 008 000 008 000 000 000 043 123 231 172 172 049 057 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 049 057 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	97
+[LUA-print] msg len :	43
+[LUA-print] available:	50
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 049 057 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 049 057 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 050 048 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 050 048 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 050 049 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 050 049 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 050 050 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 050 050 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 050 051 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 050 051 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 050 052 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 050 052 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 050 053 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 050 053 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	100
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 050 054 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 050 054 093 032 100 097 116 097 093 032 125 008 000 008 000 000 000 043 123 231 172 172 050 055 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 050 055 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	97
+[LUA-print] msg len :	43
+[LUA-print] available:	50
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 050 055 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 050 055 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	150
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 050 056 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 050 056 093 032 100 097 116 097 093 032 125 008 000 008 000 000 000 043 123 231 172 172 050 057 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 050 057 093 032 100 097 116 097 093 032 125 008 000 008 000 000 000 043 123 231 172 172 051 048 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 051 048 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	147
+[LUA-print] msg len :	43
+[LUA-print] available:	100
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	100
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 050 057 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 050 057 093 032 100 097 116 097 093 032 125 008 000 008 000 000 000 043 123 231 172 172 051 048 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 051 048 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	97
+[LUA-print] msg len :	43
+[LUA-print] available:	50
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 051 048 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 051 048 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	100
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 051 049 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 051 049 093 032 100 097 116 097 093 032 125 008 000 008 000 000 000 043 123 231 172 172 051 050 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 051 050 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	97
+[LUA-print] msg len :	43
+[LUA-print] available:	50
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 051 050 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 051 050 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	150
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 051 051 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 051 051 093 032 100 097 116 097 093 032 125 008 000 008 000 000 000 043 123 231 172 172 051 052 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 051 052 093 032 100 097 116 097 093 032 125 008 000 008 000 000 000 043 123 231 172 172 051 053 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 051 053 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	147
+[LUA-print] msg len :	43
+[LUA-print] available:	100
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	100
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 051 052 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 051 052 093 032 100 097 116 097 093 032 125 008 000 008 000 000 000 043 123 231 172 172 051 053 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 051 053 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	97
+[LUA-print] msg len :	43
+[LUA-print] available:	50
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 051 053 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 051 053 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	100
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 051 054 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 051 054 093 032 100 097 116 097 093 032 125 008 000 008 000 000 000 043 123 231 172 172 051 055 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 051 055 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	97
+[LUA-print] msg len :	43
+[LUA-print] available:	50
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 051 055 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 051 055 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	150
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 051 056 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 051 056 093 032 100 097 116 097 093 032 125 008 000 008 000 000 000 043 123 231 172 172 051 057 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 051 057 093 032 100 097 116 097 093 032 125 008 000 008 000 000 000 043 123 231 172 172 052 048 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 052 048 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	147
+[LUA-print] msg len :	43
+[LUA-print] available:	100
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	100
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 051 057 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 051 057 093 032 100 097 116 097 093 032 125 008 000 008 000 000 000 043 123 231 172 172 052 048 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 052 048 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	97
+[LUA-print] msg len :	43
+[LUA-print] available:	50
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 052 048 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 052 048 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	100
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 052 049 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 052 049 093 032 100 097 116 097 093 032 125 008 000 008 000 000 000 043 123 231 172 172 052 050 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 052 050 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	97
+[LUA-print] msg len :	43
+[LUA-print] available:	50
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 052 050 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 052 050 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	100
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 052 051 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 052 051 093 032 100 097 116 097 093 032 125 008 000 008 000 000 000 043 123 231 172 172 052 052 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 052 052 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	97
+[LUA-print] msg len :	43
+[LUA-print] available:	50
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 052 052 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 052 052 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	100
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 052 053 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 052 053 093 032 100 097 116 097 093 032 125 008 000 008 000 000 000 043 123 231 172 172 052 054 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 052 054 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	97
+[LUA-print] msg len :	43
+[LUA-print] available:	50
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 052 054 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 052 054 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 052 055 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 052 055 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print] test3
+[LUA-print] 8
+[LUA-print] 8
+[LUA-print] 4
+[LUA-print] 4
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	50
+[LUA-print] curr buffer bytes :	008 000 008 000 000 000 043 123 231 172 172 052 056 230 172 161 230 148 182 229 136 176 230 149 176 230 141 174 045 045 062 062 091 115 101 110 100 032 091 052 056 093 032 100 097 116 097 093 032 125 
+[LUA-print] read Begin byte:	8
+[LUA-print] method_id :	8
+[LUA-print] available:	47
+[LUA-print] msg len :	43
+[LUA-print] available:	0
+[LUA-print] mainScene -> userdata: 0x7fbff5f4f078
+[LUA-print]  解 析 packet 
+[LUA-print] cur PacketBuffer len:	0
+[LUA-print] SocketTCP 接收数据 ----- 
+[LUA-print] SocketTCP close
+[LUA-print] SocketTCP closed
+[LUA-print] [INFO] MyNet._reconnect

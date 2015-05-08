@@ -1,0 +1,54 @@
+--
+-- Author: wzg
+-- Date: 2014-12-19 20:56:08
+--
+
+package.loaded["app.scenes.MainScene"] = nil
+require("app.scenes.MainScene")
+
+package.loaded["app.scenes.LoginScene"] = nil
+require("app.scenes.LoginScene")
+
+package.loaded["app.scenes.FightScene"] = nil
+require("app.scenes.FightScene")
+
+
+------------------- sprite -------------------------
+package.loaded["app.sprite.Hero"] = nil
+require("app.sprite.Hero")
+
+
+
+
+------------------- data -------------------------
+package.loaded["app.data.ZhenXing"] = nil
+require("app.data.ZhenXing")
+
+
+
+------------------- ui -------------------------
+package.loaded["app.ui.ScaleButton"] = nil
+require("app.ui.ScaleButton")
+
+package.loaded["app.ui.TimerLabel"] = nil
+require("app.ui.TimerLabel")
+
+package.loaded["app.ui.TypingLabel"] = nil
+require("app.ui.TypingLabel")
+
+
+
+---------------------- window ------------------------
+
+---------------------- fight ------------------------
+package.loaded["app.fight.Hurt"] = nil
+require("app.fight.Hurt")
+---------------------- other ------------------------
+package.loaded["app.common"] = nil
+require("app.common")
+
+package.loaded["app.gameConst"] = nil
+require("app.gameConst")
+
+
+

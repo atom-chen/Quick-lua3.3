@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://www.litefeel.com/how-to-use-dragonbones-in-lua/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>如何在lua项目中使用dragonbones</title>
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.litefeel.com/feed/">
+<link rel="pingback" href="http://www.litefeel.com/xmlrpc.php">
+<link rel="author" href="https://plus.google.com/104333184459487597273">
+<link rel="stylesheet" id="prettify_css-css" href="./如何在lua项目中使用dragonbones_files/prettify.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="inove_style-css" href="./如何在lua项目中使用dragonbones_files/style20140927.css" type="text/css" media="screen">
+<script async="" src="./如何在lua项目中使用dragonbones_files/analytics.js"></script><script type="text/javascript" src="./如何在lua项目中使用dragonbones_files/prettify.min.js"></script>
+<script type="text/javascript" src="./如何在lua项目中使用dragonbones_files/jquery.js"></script>
+<script type="text/javascript" src="./如何在lua项目中使用dragonbones_files/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="./如何在lua项目中使用dragonbones_files/swfobject-2.2.min.js"></script>
+<script type="text/javascript" src="./如何在lua项目中使用dragonbones_files/showflash.js"></script>
+<script type="text/javascript" src="./如何在lua项目中使用dragonbones_files/script20140919.js"></script>
+<script type="text/javascript">
+	window._wp_rp_static_base_url = 'https://wprp.zemanta.com/static/';
+	window._wp_rp_wp_ajax_url = "http://www.litefeel.com/wp-admin/admin-ajax.php";
+	window._wp_rp_plugin_version = '3.5.3';
+	window._wp_rp_post_id = '2540';
+	window._wp_rp_num_rel_posts = '10';
+	window._wp_rp_thumbnails = false;
+	window._wp_rp_post_title = '%E5%A6%82%E4%BD%95%E5%9C%A8lua%E9%A1%B9%E7%9B%AE%E4%B8%AD%E4%BD%BF%E7%94%A8dragonbones';
+	window._wp_rp_post_tags = [];
+	window._wp_rp_promoted_content = false;
+</script>
+
+		<!--wp code prettify-->
+				<style type="text/css" id="prettify_custom">pre.prettyprint { margin: 5px; padding: 10px; max-height: 300px; overflow: auto; background-color: #f8f8f8;}</style>
+		
+		<script type="text/javascript">
+			function wpCodePrettifyOnLoad(func){
+				var wpCodePrettifyOldOnLoad = window.onload;
+				if (typeof window.onload != 'function') {
+					window.onload = func
+				} else {
+					window.onload = function () {
+						wpCodePrettifyOldOnLoad();
+						func()
+					}
+				}
+			}
+
+			wpCodePrettifyOnLoad(function(){prettyPrint();});
+		</script>
+		<!--//wp code prettify-->
+
+		
+<!-- All in One SEO Pack 2.2.3.1 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<meta name="description" content="由于热更新的原因，现在好多cocos2dx项目都会使用lua/js脚本来开发，这篇讲下如何在cocos2dx-lua项目中使用DB(dragonbones,龙骨)">
+
+<meta name="keywords" content="dragonbones,lua,cocos2dx">
+
+<link rel="canonical" href="./如何在lua项目中使用dragonbones_files/如何在lua项目中使用dragonbones.html">
+<!-- /all in one seo pack -->
+<script type="text/javascript">
+window.showFlashExpressInstallSWFURL = 'http://www.litefeel.com/wp-content/plugins/flash-show-and-hide-box/swf/expressInstall.swf';
+window.showFlashIconURL = 'http://www.litefeel.com/wp-content/plugins/flash-show-and-hide-box/img/flash_icon.gif';
+window.showFlashShowingStateText = '';
+window.showFlashHidingStateText = '';
+</script>
+
+<!--[if IE]>
+<script>
+	document.createElement('article');
+	document.createElement('time');
+</script>
+<![endif]-->
+<style type="text/css">
+	@media (max-width: 960px) {
+		body{min-width: 0}
+		#sidebar,#searchbox,#header .floatright{display: none;}
+		#menus li a{padding: 0 5px}
+		#content .inner, #header .inner, #nav .inner, #footer .inner, #main,
+		.comment .info{width: auto;}
+		#comment{width: 99%;}
+		#main{float: none;}
+	}
+	@media (max-width: 600px) {
+		/*hide Collection,Album,Links*/
+		#menus #menu-item-1502,#menus #menu-item-1501,#menus #menu-item-1500{display: none;}
+	}
+</style>
+</head>
+<body itemscope="" itemtype="http://schema.org/WebPage">
+
+<!-- container START -->
+<div id="container">
+
+<!-- header START -->
+<div id="header">
+<div class="inner clearfix">
+	<!-- banner START -->
+		<!-- banner END -->
+
+	<div id="caption">
+		<h1 id="title"><a href="http://www.litefeel.com/">LiteFeel</a></h1>
+		<div id="tagline">for flash and cocos2dx</div>
+	</div>
+	<div class="floatright">
+		<img src="./如何在lua项目中使用dragonbones_files/qr-website.png" title="扫描二维码查看" alt="网站二维码" width="90" height="90">
+	</div>
+	<div class="fixed"></div>
+</div>
+</div>
+<!-- header END -->
+
+<!-- navigation START -->
+<div id="nav">
+<div class="inner clearfix">
+	<!-- menus START -->
+	<ul id="menus"><li id="menu-item-748" class="home menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-748"><a href="http://www.litefeel.com/">Home</a></li>
+<li id="menu-item-1502" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1502"><a href="http://www.litefeel.com/collection/">Collection</a></li>
+<li id="menu-item-1552" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1552"><a title="插件" href="http://www.litefeel.com/plugins/">Plugins</a></li>
+<li id="menu-item-2384" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2384"><a href="http://www.litefeel.com/notepaper/">Notepaper</a></li>
+<li id="menu-item-2309" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2309"><a href="http://www.litefeel.com/how-to-use-dragonbones-in-lua/#">Tools</a>
+<ul class="sub-menu">
+	<li id="menu-item-2468" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2468"><a href="http://www.litefeel.com/tools/ip.php">IP</a></li>
+	<li id="menu-item-1917" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1917"><a href="http://www.litefeel.com/tools/ascii.php">ASCII</a></li>
+	<li id="menu-item-2265" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2265"><a href="http://www.litefeel.com/tools/unicode.php">Unicode</a></li>
+	<li id="menu-item-2485" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2485"><a href="http://www.litefeel.com/tools/cocostudioPositionFixer.php">cocostudioPositionFixer</a></li>
+</ul>
+</li>
+<li id="menu-item-1501" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1501"><a href="http://www.litefeel.com/album/">Album</a></li>
+<li id="menu-item-1500" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1500"><a href="http://www.litefeel.com/links/">Links</a></li>
+<li id="menu-item-1503" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1503"><a rel="author" href="http://www.litefeel.com/contact/">Contact</a></li>
+</ul>		
+		
+	<!-- menus END -->
+
+	<!-- searchbox START -->
+	<div id="searchbox">
+					<form action="http://www.litefeel.com/" method="get">
+				<div class="content">
+					<input type="text" class="textfield searchtip" name="s" size="24" value="">
+					<input type="submit" class="button" value="">
+				</div>
+			</form>
+			</div>
+
+	<!-- searchbox END -->
+
+	<div class="fixed"></div>
+</div>
+</div>
+<!-- navigation END -->
+
+<!-- content START -->
+<div id="content">
+<div class="inner clearfix">
+	<!-- main START -->
+	<div id="main">
+
+
+	<div id="postpath" itemprop="breadcrumb">
+		<a rel="nofollow" href="http://www.litefeel.com/">Home</a> &gt; <a href="http://www.litefeel.com/category/development/">程序开发</a> &gt; <a href="http://www.litefeel.com/category/development/cocos2dx/">cocos2dx</a> &gt; 如何在lua项目中使用dragonbones	</div>
+	<div class="post" id="post-2540" itemscope="" itemtype="http://schema.org/BlogPosting">
+		<h1 itemprop="name">如何在lua项目中使用dragonbones</h1>
+		<link itemprop="url" href="./如何在lua项目中使用dragonbones_files/如何在lua项目中使用dragonbones.html">
+		<div class="info">
+			<time class="date" itemprop="dateCreated" datetime="2015-02-12T15:17:13+00:00">2015年2月12日</time>
+																<span class="addcomment"><a href="http://www.litefeel.com/how-to-use-dragonbones-in-lua/#respond">发表评论</a></span>
+				<span class="comments"><a itemprop="discussionUrl" href="http://www.litefeel.com/how-to-use-dragonbones-in-lua/#comments">阅读评论</a></span>
+									<div class="fixed"></div>
+		</div>
+		<div class="content" itemprop="articleBody">
+			<p>由于热更新的原因，现在好多cocos2dx项目都会使用lua/js脚本来开发，这篇讲下如何在cocos2dx-lua项目中使用DB(dragonbones,龙骨)。<br>
+这里假设已经建好了cocos2dx的lua项目，将DB放到了指定目录，并且lua绑定已经做完了。如果以上步骤没有做完，请看<a href="http://www.litefeel.com/how-to-do-lua-bindings-for-dragonbones-vs/">这里</a>。</p>
+<p><span id="more-2540"></span></p>
+<p>DB在lua项目中的使用和在C++项目中使用基本一样，这里列下不同点：</p>
+<ol>
+<li>事件侦听方式修改</li>
+<li>数据类在lua中基本得不到</li>
+<li>某些带有<code>void*</code>的接口在lua中不可用</li>
+</ol>
+<p>虽然有些API在lua中不可用，但是基本使用上没有大问题。<br>
+所有DB的类都映射到<code>db</code>对象中，比如<code>dragonbones::DBCCArmatureNode</code>映射为<code>db.DBCCArmatureNode</code>。</p>
+<h4>创建<code>DBCCArmatrueNode</code></h4>
+<p>下面创建一个"dragonBoy"的示例并播放walk动作，代码很简单，跟C++中使用一样，只是编写方式变了下。</p>
+<pre class="prettyprint prettyprinted"><span class="kwd">local</span><span class="pln"> factory </span><span class="pun">=</span><span class="pln"> db</span><span class="pun">.</span><span class="typ">DBCCFactory</span><span class="pun">:</span><span class="pln">getInstance</span><span class="pun">()</span><span class="pln">
+</span><span class="kwd">local</span><span class="pln"> dbnode </span><span class="pun">=</span><span class="pln"> factory</span><span class="pun">:</span><span class="pln">buildArmatureNode</span><span class="pun">(</span><span class="str">"dragonBoy"</span><span class="pun">)</span><span class="pln">
+dbnode</span><span class="pun">:</span><span class="pln">getAnimation</span><span class="pun">():</span><span class="pln">gotoAndPlay</span><span class="pun">(</span><span class="str">"walk"</span><span class="pun">)</span><span class="pln">
+addChild</span><span class="pun">(</span><span class="pln">dbnode</span><span class="pun">)</span></pre>
+<h4>添加事件</h4>
+<p>添加事件跟C++中不一样了，在lua中事件被分成了两类：<strong>动画事件</strong>和<strong>帧事件</strong>。<br>
+其实还有DB还支持声音事件，而且C++中也实现了，只是感觉声音事件没有那么重要，完全可以用帧事件代替，所以就没有提供帧事件的lua接口。</p>
+<pre class="prettyprint prettyprinted"><span class="pun">--</span><span class="pln"> </span><span class="lit">@param</span><span class="pln"> table </span><span class="kwd">event</span><span class="pln">
+</span><span class="pun">--</span><span class="pln">     db</span><span class="pun">.</span><span class="typ">DBCCArmature</span><span class="pln"> armature
+</span><span class="pun">--</span><span class="pln">     db</span><span class="pun">.</span><span class="typ">DBCCArmatureNode</span><span class="pln"> armatureNode
+</span><span class="pun">--</span><span class="pln">     </span><span class="kwd">int</span><span class="pln"> type            </span><span class="pun">对应于</span><span class="pln">dragonbones</span><span class="pun">::</span><span class="typ">EventData</span><span class="pun">::</span><span class="typ">EventType</span><span class="pln">
+</span><span class="pun">--</span><span class="pln">     </span><span class="kwd">string</span><span class="pln"> boneName     </span><span class="pun">仅在帧事件中有效</span><span class="pln">
+</span><span class="pun">--</span><span class="pln">     </span><span class="kwd">string</span><span class="pln"> animationName
+</span><span class="pun">--</span><span class="pln">     </span><span class="kwd">string</span><span class="pln"> frameLabel   </span><span class="pun">仅在帧事件中有效</span><span class="pln">
+</span><span class="pun">--</span><span class="pln">     </span><span class="kwd">bool</span><span class="pln"> isLastAnimation
+</span><span class="kwd">local</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> onEvent</span><span class="pun">(</span><span class="pln"> </span><span class="kwd">event</span><span class="pln"> </span><span class="pun">)</span><span class="pln"> </span><span class="kwd">end</span><span class="pln">
+
+</span><span class="pun">--</span><span class="pln"> </span><span class="pun">注册动画事件</span><span class="pln">
+armatureNode</span><span class="pun">:</span><span class="pln">registerAnimationEventHandler</span><span class="pun">(</span><span class="pln">onEvent</span><span class="pun">)</span><span class="pln">
+</span><span class="pun">--</span><span class="pln"> </span><span class="pun">注册帧事件</span><span class="pln">
+armatureNode</span><span class="pun">:</span><span class="pln">registerFrameEventHandler</span><span class="pun">(</span><span class="pln">onEvent</span><span class="pun">)</span></pre>
+<div class="post_info"> <div class="announce_left"> » 转载请注明来源：<a title="www.litefeel.com" href="http://www.litefeel.com/">www.litefeel.com</a> » 《<a rel="bookmark" title="如何在lua项目中使用dragonbones" href="./如何在lua项目中使用dragonbones_files/如何在lua项目中使用dragonbones.html">如何在lua项目中使用dragonbones</a>》<br>» 本文链接地址：<a rel="bookmark" title="如何在lua项目中使用dragonbones" href="./如何在lua项目中使用dragonbones_files/如何在lua项目中使用dragonbones.html">http://www.litefeel.com/how-to-use-dragonbones-in-lua/</a><br>» 订阅本站：<a rel="external nofollow" title="LiteFeel的RSS源" href="http://www.litefeel.com/feed/" class="externallink">http://www.litefeel.com/feed/</a></div><div class="announce_right"><img src="./如何在lua项目中使用dragonbones_files/how-to-use-dragonbones-in-lua-qr.png" title="扫描二维码查看" alt="文章二维码" width="90" height="90"></div></div>			<div class="fixed"></div>
+		</div>
+				<div class="under">
+						<span class="tags">标签: </span><span><a href="http://www.litefeel.com/tag/dragonbones/" rel="tag">Dragonbones</a>, <a href="http://www.litefeel.com/tag/lua/" rel="tag">Lua</a></span>		</div>
+	</div>
+	
+	<!-- related posts START -->
+	<div id="related_posts">
+<div class="wp_rp_wrap  wp_rp_plain" id="wp_rp_first"><div class="wp_rp_content"><h3 class="related_post_title">相关文章:</h3><ul class="related_post wp_rp"><li data-position="0" data-poid="in-2526" data-post-type="empty"><a href="http://www.litefeel.com/how-to-do-lua-bindings-for-dragonbones-android/" class="wp_rp_title">如何做dragonbones的lua绑定(Android)</a></li><li data-position="1" data-poid="in-2480" data-post-type="empty"><a href="http://www.litefeel.com/how-to-do-lua-bindings-for-dragonbones-vs/" class="wp_rp_title">如何做dragonbones的lua绑定(VisualStudio)</a></li><li data-position="2" data-poid="in-2163" data-post-type="empty"><a href="http://www.litefeel.com/lua-override-userdata/" class="wp_rp_title">cocos2dx开发中的lua继承与覆盖C++方法</a></li><li data-position="3" data-poid="in-2496" data-post-type="empty"><a href="http://www.litefeel.com/free-license-for-texturepacker/" class="wp_rp_title">免费获得texturepacker许可证</a></li><li data-position="4" data-poid="in-229" data-post-type="empty"><a href="http://www.litefeel.com/air-process-terminated-without-establishing-connection-to-debugger/" class="wp_rp_title">AIR Process terminated without establishing connection to debugger.</a></li><li data-position="5" data-poid="in-474" data-post-type="empty"><a href="http://www.litefeel.com/bezier-line-demo/" class="wp_rp_title">二次贝塞尔曲线实例</a></li><li data-position="6" data-poid="in-961" data-post-type="empty"><a href="http://www.litefeel.com/gravatar-fixed/" class="wp_rp_title">Gravatar Fixed 头像修正插件</a></li><li data-position="7" data-poid="in-1654" data-post-type="empty"><a href="http://www.litefeel.com/classical-regexp-test-algorithm/" class="wp_rp_title">经典正则验证算法</a></li><li data-position="8" data-poid="in-2349" data-post-type="empty"><a href="http://www.litefeel.com/sublimetext-shortcuts/" class="wp_rp_title">sublimetext常用快捷键</a></li><li data-position="9" data-poid="in-357" data-post-type="empty"><a href="http://www.litefeel.com/event-description-bubble-up/" class="wp_rp_title">AS3 事件冒泡 目标阶段 捕获阶段 冒泡阶段 eventPhase</a></li></ul></div></div>
+</div><div class="fixed"></div>	<!-- related posts END -->
+	<div id="postnavi">
+		<span class="prev"></span>
+		<span class="next"><a href="http://www.litefeel.com/how-to-do-lua-bindings-for-dragonbones-android/" rel="prev">如何做dragonbones的lua绑定(Android)</a></span>
+		<div class="fixed"></div>
+	</div>
+	
+
+	<div id="comments">
+			<form action="http://www.litefeel.com/wp-comments-post.php" method="post" id="commentform">
+		<div id="respond">
+
+							
+				<div id="author_info">
+					<div class="row">
+						<input type="text" name="author" id="author" class="textfield" value="" size="24" tabindex="1">
+						<label for="author" class="small">昵称 (必填)</label>
+					</div>
+					<div class="row">
+						<input type="text" name="email" id="email" class="textfield" value="" size="24" tabindex="2">
+						<label for="email" class="small">电子邮箱 (我们会为您保密) (必填)</label>
+					</div>
+					<div class="row">
+						<input type="text" name="url" id="url" class="textfield" value="" size="24" tabindex="3">
+						<label for="url" class="small">网址</label>
+					</div>
+				</div>
+
+				
+						<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="08913b3ef3"></p><p style="display: none;"></p>			<!-- comment input -->
+			<div class="row">
+				<textarea name="wall" id="comment" tabindex="4" rows="8" cols="50"></textarea><textarea name="comment" cols="50" rows="4" style="display:none"></textarea>
+			</div>
+
+			<!-- comment submit and rss -->
+			<div id="submitbox">
+				<a class="feed" href="http://www.litefeel.com/comments/feed/">订阅评论</a>
+				<div class="submitbutton">
+					<input name="submit" type="submit" id="submit" class="button" tabindex="5" value="提交评论 (Ctrl+Enter)">
+				</div>
+								<input type="hidden" name="comment_post_ID" value="2540">
+				<div class="fixed"></div>
+			</div>
+		</div>
+		<input type="hidden" id="ak_js" name="ak_js" value="1426858820245"></form>
+
+					<script type="text/javascript">jQuery(MGJS.loadCommentShortcut);</script>
+		
+	
+<div id="cmtswitcher">
+			<a id="commenttab" class="curtab" href="javascript:void(0);" onclick="MGJS.switchTab(&#39;thecomments,commentnavi&#39;, &#39;thetrackbacks&#39;, &#39;commenttab&#39;, &#39;curtab&#39;, &#39;trackbacktab&#39;, &#39;tab&#39;);">评论 (0)</a>
+		<a id="trackbacktab" class="tab" href="javascript:void(0);" onclick="MGJS.switchTab(&#39;thetrackbacks&#39;, &#39;thecomments,commentnavi&#39;, &#39;trackbacktab&#39;, &#39;curtab&#39;, &#39;commenttab&#39;, &#39;tab&#39;);">Trackbacks (1)</a>
+				<span class="addcomment"><a href="http://www.litefeel.com/how-to-use-dragonbones-in-lua/#respond">发表评论</a></span>
+				<span class="addtrackback"><a href="http://www.litefeel.com/how-to-use-dragonbones-in-lua/trackback/">Trackback</a></span>
+		<div class="fixed"></div>
+</div>
+
+<div id="commentlist">
+	<!-- comments START -->
+	<ol id="thecomments">
+			<li class="messagebox">
+			本文目前尚无任何评论.		</li>
+		</ol>
+	<!-- comments END -->
+
+
+	<!-- trackbacks START -->
+	
+		<ol id="thetrackbacks">
+									<li id="comment-10502" class="pingback even thread-even depth-1">
+			<div class="comment-body">
+				Pingback： <a href="http://www.litefeel.com/how-to-do-lua-bindings-for-dragonbones-vs/" rel="external nofollow" class="url externallink">如何做dragonbones的lua绑定(VisualStudio)</a> 			</div>
+</li><!-- #comment-## -->
+					</ol>
+			<div class="fixed"></div>
+	<!-- trackbacks END -->
+</div>
+	<div class="goback">
+		<span class="addcomment"><a href="http://www.litefeel.com/how-to-use-dragonbones-in-lua/#respond">发表评论</a></span>
+		<span class="read-article"><a href="http://www.litefeel.com/how-to-use-dragonbones-in-lua/#main" rel="nofollow">阅读文章</a></span>
+	</div>
+	<div class="fixed"></div>
+</div>
+	
+
+	</div>
+	<!-- main END -->
+
+	<!-- sidebar START -->
+<div id="sidebar">
+	<!-- feeds -->
+	<div class="widget widget_feeds">
+		<div class="content">
+			<div id="subscribe">
+				<a rel="external nofollow" id="feedrss" title="订阅这个博客的文章" href="http://www.litefeel.com/feed/" class="externallink">订阅</a>
+								<a rel="external nofollow" id="microblog_t" title="我的腾讯微博" href="http://t.qq.com/lite3_" class="externallink">腾讯</a>
+				<a rel="external nofollow" id="microblog_sina" title="我的新浪微博" href="http://weibo.com/lite3" class="externallink">新浪</a>
+				<a rel="external nofollow" id="github" title="我的GitHub" href="https://github.com/lite3" class="externallink">GitHub</a>
+			</div>
+						
+			<div class="fixed"></div>
+		</div>
+	</div>
+	<!-- showcase -->
+		<!-- posts -->
+		<div class="widget">
+		<div class="widget-title">最新文章</div>
+		<ul>
+			<li><a href="./如何在lua项目中使用dragonbones_files/如何在lua项目中使用dragonbones.html">如何在lua项目中使用dragonbones</a></li><li><a href="http://www.litefeel.com/how-to-do-lua-bindings-for-dragonbones-android/">如何做dragonbones的lua绑定(Android)</a></li><li><a href="http://www.litefeel.com/writing-wordpress-posts-in-markdown/">用markdown语法写wp文章</a></li><li><a href="http://www.litefeel.com/free-license-for-texturepacker/">免费获得texturepacker许可证</a></li><li><a href="http://www.litefeel.com/how-to-do-lua-bindings-for-dragonbones-vs/">如何做dragonbones的lua绑定(VisualStudio)</a></li><li><a href="http://www.litefeel.com/file-path-in-cross-platform/">cocos2dx跨平台文件路径</a></li><li><a href="http://www.litefeel.com/linode-vps/">使用linode VPS</a></li><li><a href="http://www.litefeel.com/c-plus-plus-polymorphism/">C++多态</a></li><li><a href="http://www.litefeel.com/sublimetext-shortcuts/">sublimetext常用快捷键</a></li><li><a href="http://www.litefeel.com/tafanghaizeiwang/">塔防海贼王</a></li>		</ul>
+	</div>
+	<div class="widget">
+		<div class="widget-title"><a href="http://www.litefeel.com/categories/">分类目录</a></div>
+		<ul class="categoriesForTwo">
+				<li class="cat-item cat-item-7"><a href="http://www.litefeel.com/category/other/">Other</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://www.litefeel.com/category/sfs/">SFS</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://www.litefeel.com/category/wordpress/">WordPress</a>
+</li>
+	<li class="cat-item cat-item-307"><a href="http://www.litefeel.com/category/tools/">开发工具</a>
+</li>
+	<li class="cat-item cat-item-126"><a href="http://www.litefeel.com/category/database/">数据库</a>
+</li>
+	<li class="cat-item cat-item-306"><a href="http://www.litefeel.com/category/development/">程序开发</a>
+</li>
+	<li class="cat-item cat-item-70"><a href="http://www.litefeel.com/category/arithmetic/">算法</a>
+</li>
+	<li class="cat-item cat-item-60"><a href="http://www.litefeel.com/category/summary/">经验之谈</a>
+</li>
+		</ul>
+		<div class="clearfix"></div>
+	</div>
+	<!-- recent comments -->
+			<div id="recent-comments" class="widget">
+			<div class="widget-title">最近评论</div>
+			<ul style="cursor: auto;"><li id="rc-comment-10653" class="rc-item rc-comment rc-clearfix"><img class="rc-avatar rc-left" width="32" height="32" alt="" src="./如何在lua项目中使用dragonbones_files/313d0583bfc8ccc7bebd7594f8497177"><div class="rc-info"><a class="rc-reviewer" rel="nofollow" href="http://www.litefeel.com/how-to-do-lua-bindings-for-dragonbones-vs/#comment-10653" title="如何做dragonbones的lua绑定(VisualStudio)">lite3</a></div><div class="rc-timestamp"></div><div class="rc-excerpt">@熊 xcode下没有的，直接<span class="rc-ellipsis">...</span></div></li><li id="rc-comment-10652" class="rc-item rc-comment rc-clearfix"><img class="rc-avatar rc-left" width="32" height="32" alt="" src="./如何在lua项目中使用dragonbones_files/7a5eefe611b5f08507e119bbe463d63d"><div class="rc-info"><a class="rc-reviewer" rel="nofollow" href="http://www.litefeel.com/how-to-do-lua-bindings-for-dragonbones-vs/#comment-10652" title="如何做dragonbones的lua绑定(VisualStudio)">熊</a></div><div class="rc-timestamp"></div><div class="rc-excerpt">求mac下如何配置！！！！！</div></li><li id="rc-comment-10648" class="rc-item rc-comment rc-clearfix"><img class="rc-avatar rc-left" width="32" height="32" alt="" src="./如何在lua项目中使用dragonbones_files/7a5eefe611b5f08507e119bbe463d63d"><div class="rc-info"><a class="rc-reviewer" rel="nofollow" href="http://www.litefeel.com/how-to-do-lua-bindings-for-dragonbones-android/#comment-10648" title="如何做dragonbones的lua绑定(Android)">熊</a></div><div class="rc-timestamp"></div><div class="rc-excerpt">有mac版本的么？</div></li><li id="rc-comment-10547" class="rc-item rc-comment rc-clearfix"><img class="rc-avatar rc-left" width="32" height="32" alt="" src="./如何在lua项目中使用dragonbones_files/4dff8e93dbbf05b0f31a0d73ab851fee"><div class="rc-info"><a class="rc-reviewer" rel="nofollow" href="http://www.litefeel.com/application-domains/#comment-10547" title="教程：深入理解Flash的应用程序域(Application Domains)">chenze</a></div><div class="rc-timestamp"></div><div class="rc-excerpt">文章赞！！不过文章提到“如果是<span class="rc-ellipsis">...</span></div></li><li id="rc-comment-10481" class="rc-item rc-comment rc-clearfix"><img class="rc-avatar rc-left" width="32" height="32" alt="" src="./如何在lua项目中使用dragonbones_files/313d0583bfc8ccc7bebd7594f8497177"><div class="rc-info"><a class="rc-reviewer" rel="nofollow" href="http://www.litefeel.com/how-to-do-lua-bindings-for-dragonbones-vs/#comment-10481" title="如何做dragonbones的lua绑定(VisualStudio)">lite3</a></div><div class="rc-timestamp"></div><div class="rc-excerpt">@Tshine 昨天上传了db<span class="rc-ellipsis">...</span></div></li><li id="rc-comment-10478" class="rc-item rc-comment rc-clearfix"><img class="rc-avatar rc-left" width="32" height="32" alt="" src="./如何在lua项目中使用dragonbones_files/3d10ff6e86e59fc808770edf155e2db4"><div class="rc-info"><a class="rc-reviewer" rel="nofollow" href="http://www.litefeel.com/how-to-do-lua-bindings-for-dragonbones-vs/#comment-10478" title="如何做dragonbones的lua绑定(VisualStudio)">Tshine</a></div><div class="rc-timestamp"></div><div class="rc-excerpt">@lite3 嗯，是的。coc<span class="rc-ellipsis">...</span></div></li><li id="rc-comment-10477" class="rc-item rc-comment rc-clearfix"><img class="rc-avatar rc-left" width="32" height="32" alt="" src="./如何在lua项目中使用dragonbones_files/313d0583bfc8ccc7bebd7594f8497177"><div class="rc-info"><a class="rc-reviewer" rel="nofollow" href="http://www.litefeel.com/how-to-do-lua-bindings-for-dragonbones-vs/#comment-10477" title="如何做dragonbones的lua绑定(VisualStudio)">lite3</a></div><div class="rc-timestamp"></div><div class="rc-excerpt">@Tshine 是cocos2<span class="rc-ellipsis">...</span></div></li><li id="rc-comment-10476" class="rc-item rc-comment rc-clearfix"><img class="rc-avatar rc-left" width="32" height="32" alt="" src="./如何在lua项目中使用dragonbones_files/3d10ff6e86e59fc808770edf155e2db4"><div class="rc-info"><a class="rc-reviewer" rel="nofollow" href="http://www.litefeel.com/how-to-do-lua-bindings-for-dragonbones-vs/#comment-10476" title="如何做dragonbones的lua绑定(VisualStudio)">Tshine</a></div><div class="rc-timestamp"></div><div class="rc-excerpt">锤子手机30只龙跑步动作，30<span class="rc-ellipsis">...</span></div></li><li class="rc-navi rc-clearfix"><a "rel="nofollow&quot;" class="rc-older">下一页 »</a></li></ul>
+		</div>
+			
+				</div>
+	<!-- sidebar west END -->
+	<div class="fixed"></div>
+</div>
+</div>
+<!-- sidebar END -->
+	<div class="fixed"></div>
+</div>
+<!-- content END -->
+
+<!-- footer START -->
+<div id="footer">
+<div class="inner clearfix">
+	<div id="copyright">
+		Copyright © 2009-2015 <a href="http://www.litefeel.com/">LiteFeel</a> . All rights reserved.	</div>
+	<div id="themeinfo">
+		Power by <a rel="external" href="http://wordpress.org/" class="externallink">WordPress</a>. 
+		Theme by <a rel="external" href="http://www.neoease.com/" class="externallink">NeoEase</a>. 
+		Host on <a rel="external" href="https://www.linode.com/?r=e99568e929b474fd25dec4e734d04e7d08e8b42c" class="externallink">Linode VPS</a>. |  
+		Valid <a rel="external nofollow" href="http://validator.w3.org/check?uri=referer" class="externallink">HTML5</a> and <a rel="external nofollow" href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3" class="externallink">CSS 3</a>.
+	</div>
+</div>
+</div>
+<!-- footer END -->
+<a id="gotop" href="http://www.litefeel.com/how-to-use-dragonbones-in-lua/#" onclick="MGJS.goTop();return false;" style="z-index: 9999; right: 0px; bottom: 0px; position: fixed;">回到顶部</a>
+
+<!-- container END -->
+<script>
+/* <![CDATA[ */
+var rcGlobal = {
+	serverUrl		:'http://www.litefeel.com',
+	infoTemp		:'%REVIEWER% 在 %POST%',
+	loadingText		:'正在加载',
+	noCommentsText	:'没有任何评论',
+	newestText		:'&laquo; 最新的',
+	newerText		:'&laquo; 上一页',
+	olderText		:'下一页 &raquo;',
+	showContent		:'',
+	external		:'1',
+	avatarSize		:'32',
+	avatarPosition	:'left',
+	anonymous		:'匿名'
+};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./如何在lua项目中使用dragonbones_files/form.js"></script>
+<script type="text/javascript" src="./如何在lua项目中使用dragonbones_files/lazyload.js"></script>
+<script type="text/javascript" src="./如何在lua项目中使用dragonbones_files/comment.js"></script>
+<script type="text/javascript" src="./如何在lua项目中使用dragonbones_files/wp-recentcomments.js"></script>
+<script>
+/* <![CDATA[ */
+jQuery('a[rel~=external]').addClass("externallink").click( function(){window.open(jQuery(this).attr("href"));return false;});
+jQuery('a').click( function(){if(jQuery(this).hasClass("externallink")){return true;};
+var url = jQuery(this).attr("href")+"";var result=(/^(http|https):\/\/(.*)$/i).exec(url);
+if(result){if(!(/^(www\.)?litefeel\.com/i).test(result[2])){window.open(url);return false;}}return true;
+});
+/* ]]> */
+</script><script>
+/* <![CDATA[ */
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-27650005-1',{'cookieDomain':'www.litefeel.com'});
+ga('send', 'pageview');
+/* ]]> */
+</script>
+
+
+</body></html>

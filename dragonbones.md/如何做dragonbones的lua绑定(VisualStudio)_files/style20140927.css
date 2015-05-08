@@ -1,0 +1,285 @@
+code{padding:1px 4px 2px;margin:0 2px;border:1px solid #CCC;border-radius:3px;font-family:Consolas,"Liberation Mono",Courier,monospace;color:#666;background:#FFF}
+kbd{padding:2px 5px;border:1px solid #DDD;border-bottom-color:#999;border-left-color:#999;font-family:Consolas,"andale mono","lucida console","courier new",monospace;background:#EEE}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p,fieldset{margin:0;padding:0}
+abbr[title],acronym[title]{border-bottom:thin dotted;cursor:help}
+body{background:#f9f9f9;color:#000;font-family:"Microsoft Yahei",Verdana,"BitStream vera Sans",Tahoma,Helvetica,Sans-serif;font-size:13px;min-width:980px}
+h1,h2,h3,h4,h5,h6{font-weight:bold;letter-spacing:-0.05em;font-family:"Microsoft Yahei"}
+h1{font-size:200%}
+h2{font-size:170%}
+h3{font-size:150%}
+h4{font-size:130%}
+h5{font-size:110%}
+h6{font-size:100%}
+img{border:0}
+p img,img.sided{background:#FFF;border:2px solid #CCC;padding:3px}
+small{font-size:10px}
+a:hover img.sided{border-color:#a6a6a6}
+a{color:#2970a6;text-decoration:none}
+a:hover{text-decoration:underline}
+.wp-caption{background:#f7f7f7;border:1px solid #CCC;padding:5px 0;margin-bottom:5px;text-align:center}
+.wp-caption img{margin:0 5px}
+.wp-caption-text{text-align:center;padding:0 5px!important;padding:3px 5px 0}
+*+html .wp-caption-text{padding:3px 5px 0!important}
+.post .content .wp-caption p{margin:0}
+blockquote,pre{background-color:#f4f5f7;border:1px dashed #CCC;padding:8px 12px 8px 36px;margin:5px 0}
+.more-link{font-size:11px;text-decoration:underline;background:url(//cdn.litefeel.com/static/img/inove/icons.gif) no-repeat 0 -650px;padding-left:22px}
+.alignleft{float:left;text-align:left;margin-right:10px}
+.alignright{float:right;text-align:right;margin-left:10px}
+.aligncenter{display:block;margin-left:auto;margin-right:auto}
+.floatleft{float:left}
+.floatright{float:right}
+.left{float:left;margin-right:10px}
+.right{float:right;margin-left:10px}
+.fixed,.clear{clear:both}
+.clearfix:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+.clearfix{/*display:inline-block*/}
+html[xmlns] .clearfix{display:block}
+* html .clearfix{height:1%}
+input.textfield,textarea{background:#FFF url(//cdn.litefeel.com/static/img/inove/textfield.gif) top repeat-x;border:1px solid #a6a6a6;padding:2px 1px;font-size:12px;font-family:Verdana,"BitStream vera Sans",Tahoma,Helvetica,Sans-serif}
+.boxcaption{background:#EEE;padding:6px 12px;border-bottom:1px solid #CCC}
+.boxcaption h3{font-size:12px;font-family:Verdana,"BitStream vera Sans",Tahoma,Helvetica,Sans-serif;letter-spacing:0}
+.box{background:#FFF;padding:8px 12px;margin-bottom:10px}
+.messagebox,.errorbox{background:#edeff0 url(//cdn.litefeel.com/static/img/inove/messagebox.gif) no-repeat;padding:0 12px;height:27px;line-height:27px;font-size:11px}
+.w3c{color:#080;font-size:10px}
+.clearboth{clear:both}
+#container{width:100%;overflow:hidden}
+#content .inner,#header .inner,#nav .inner,#footer .inner{width:980px;margin:0 auto}
+#header{background:#ccc;height:90px;border-bottom:1px solid #a6a6a6;overflow:hidden}
+#header .inner{position:relative}
+#caption{padding:25px 30px 21px!important;float:left}
+#title a{text-decoration:none;color:#000;height:30px;display:block;font-family:"Microsoft Yahei","Plantagenet Cherokee";letter-spacing:1px}
+#google-plus-for-blog{position:absolute;left:190px;top:25px}
+#tagline{color:#242424;border-top:1px solid #242424;text-decoration:none;font-size:10px;float:left;padding:0 3px}
+#header .banner{float:right;padding:15px 15px 0;color:#999}
+#nav{background:#FFF;border-bottom:1px solid #a6a6a6}
+#menus li a{height:31px;line-height:31px;text-decoration:none;font-size:90%;float:left;padding:0 18px}
+#menus li{display:inline;list-style:none;height:31px;line-height:31px;margin-left:0;text-decoration:none;font-size:11px;float:left;z-index:1;position:relative}
+#menus li:hover,#menus li.current{background-color:#eee}
+#menus li.current_page_item,#menus li.current-cat{background-color:#ddd}
+#menus li.lastmenu:hover{background-position:0 0;cursor:default}
+#searchbox{background:url(//cdn.litefeel.com/static/img/inove/searchbox.gif) no-repeat;width:209px;height:21px;display:block;float:right;margin-top:4px;margin-right:10px!important;margin-right:5px;padding:3px 2px}
+#searchbox .textfield{background:0;border:0;width:185px;float:left;margin-right:2px;padding-left:2px}
+#searchbox .button{background:0;border:0;width:18px;height:18px;cursor:pointer;float:left;margin-top:1px}
+#searchbox .searchtip{color:#999}
+#menus li ul{display:none;background:#f4f5f7;border:solid #a6a6a6;border-width:1px 1px 0;line-height:0;position:absolute;z-index:1;top:30px;left:0}
+#menus li:hover ul{display:block}
+#menus li li{float:none;margin:0;padding:0;list-style:none}
+#menus li li a{float:none;padding:7px 18px 7px 10px;text-decoration:none;border-bottom:1px solid #DDD;margin:0;background-image:none;height:auto;line-height:145%;color:#999;display:block;width:175px}
+#menus li li a.last{border-color:#a6a6a6}
+#menus li li a:hover,#menus li li a.current{background-color:#edeff0;color:#382e1f}
+#menus li li a.subtitle,#menus li li a.subtitle:hover{background-image:url(//cdn.litefeel.com/static/img/inove/arrow.gif);background-position:right;background-repeat:no-repeat}
+#content{min-height:400px}
+#main{width:650px;padding:0 0 15px;float:left;overflow:hidden}
+#notice{color:#080;border:1px solid #c6c6c6;margin:10px 0;padding:3px}
+#notice a{text-decoration:underline}
+#notice .content:before{content:"i";left:3px;width:16px;height:16px;padding:0 7px;font-size:14px;font-weight:bold;line-height:15px;text-align:center;color:#fff;background:#2385ba;border-radius:16px}
+.page_child{padding:20px 0 7px}
+.post h1,.post h2{display:block;margin-top:10px;border-bottom:1px solid #CCC;padding:0 5px 3px;font-size:16px;font-family:"Microsoft Yahei",Verdana,"BitStream vera Sans"}
+.post h2 a.title{text-decoration:none;color:#4c4c4c}
+.post h2 a.title:hover{color:#2970a6}
+.post h2 .act a{font-weight:normal}
+.post .info{margin:5px}
+.post .info span.first{margin-left:0}
+.post .date,.post .author,.post .editpost,.post .comments,.post .addcomment,.post .addlink,.post .editlinks{background:url(//cdn.litefeel.com/static/img/inove/icons.gif) no-repeat;padding-left:22px;height:16px;line-height:16px;display:block;font-size:11px}
+.post .tags,.post .categories{background:url(//cdn.litefeel.com/static/img/inove/icons.gif) no-repeat;width:16px;height:16px;line-height:16px;display:block;text-indent:-999em}
+.post .under span.tags,.post .under span.categories{margin-right:6px}
+.post .act{height:16px;float:right}
+.post .act span{float:left;margin-left:15px}
+.post .tags{background-position:0 -400px}
+.post .categories{background-position:0 -480px}
+.post .date{background-position:0 -48px;margin-right:15px;float:left}
+.post .author{background-position:0 0;float:left}
+.post .editpost{background-position:0 -64px;margin-left:15px;float:right}
+.post .comments{background-position:0 -96px;float:right}
+.post .addcomment{background-position:0 -112px;margin-left:15px;float:right}
+.post .addlink{background-position:0 -176px}
+.post .editlinks{background-position:0 -192px}
+.post .content{padding:5px 0 0 5px;line-height:165%;overflow:hidden}
+.post .content p{margin-bottom:10px}
+.post .under{height:16px;line-height:16px;font-size:11px;margin-bottom:10px}
+.post .under span{float:left;margin-right:15px}
+.post .content h4{color:#080;margin-bottom:10px;border-bottom:1px dotted #CCC;padding-bottom:5px}
+.post .content img{max-width:600px}
+.post .content ul,.post .content ol{padding-bottom:10px}
+.post .content ul li,.post .content ol li{list-style-position:inside;padding-left:20px}
+.post .content table{background:#FFF;border:2px solid #CCC;border-collapse:collapse;margin:5px 0 10px}
+.post .content th,.post .content td{border:1px solid #CCC;padding:3px 10px;text-align:left;vertical-align:top}
+.post .content tr.even td{background:#f7f7f7}
+.post .content th{background:#edeff0}
+#postpath{background:url(//cdn.litefeel.com/static/img/inove/icons.gif) 0 -320px no-repeat;line-height:16px;margin:5px 0;padding-left:22px}
+#pagenavi,#postnavi{border-top:1px solid #CCC;margin:10px -5px 0;padding:10px 5px 0}
+#pagenavi{font-size:11px}
+#pagenavi .newer a,#postnavi .prev a{background:url(//cdn.litefeel.com/static/img/inove/icons.gif) 0 -224px no-repeat;padding-left:22px;float:left;height:16px;line-height:16px}
+#pagenavi .older a,#postnavi .next a{background:url(//cdn.litefeel.com/static/img/inove/icons.gif) 100% -240px no-repeat;padding-right:22px;float:right;height:16px;line-height:16px}
+#google-plus-for-title{display:block;float:left;width:106px;height:24px;padding-left:10px;overflow:hidden}
+#share-excerpt-sina,#share-excerpt-qq{display:block;float:left;height:24px;text-indent:-999em;overflow:hidden;margin-right:5px;cursor:pointer;background:url(//cdn.litefeel.com/static/img/inove/social.png) no-repeat}
+#share-excerpt-sina{width:108px;background-position:-24px 0}
+#share-excerpt-qq{width:126px;background-position:-24px -24px}
+#share-seletion-panel{position:absolute}
+#share-seletion-sina,#share-seletion-qq{display:block;float:left;height:24px;margin-right:5px;text-indent:-999em;overflow:hidden;cursor:pointer;width:24px;background:url(//cdn.litefeel.com/static/img/inove/social.png) no-repeat}
+#share-seletion-qq{background-position:0 -24px}
+.bdlikebutton{float:left}
+#sidebar{width:300px;float:right;font-size:95%;line-height:145%;overflow:hidden;padding-top:8px}
+#sidebar li{background:url(//cdn.litefeel.com/static/img/inove/icons.gif) 0 -558px no-repeat;padding-left:22px;list-style:none;margin-top:5px}
+#sidebar .content,#sidebar li{font-size:12px}
+#sidebar li{font-size:12px}
+#sidebar .widget_feeds{padding:5px 15px 15px}
+#sidebar #feedrss,#sidebar #feedemail,#sidebar #followme,#sidebar #microblog_t,#sidebar #microblog_sina,#sidebar #github{height:24px;line-height:24px;display:block;padding:5px 5px 5px 32px;float:left;text-decoration:none;font-size:11px}
+#sidebar #feedrss{background:url(//cdn.litefeel.com/static/img/inove/feeds.png) 5px 5px no-repeat}
+#sidebar #feedemail{background:url(//cdn.litefeel.com/static/img/inove/feeds.png) 5px -45px no-repeat;margin-left:0}
+#sidebar #followme{background:url(//cdn.litefeel.com/static/img/inove/feeds.png) 5px -95px no-repeat;margin-left:0}
+#sidebar #microblog_t{background:url(//cdn.litefeel.com/static/img/inove/feeds.png) 5px -125px no-repeat;margin-left:0}
+#sidebar #microblog_sina{background:url(//cdn.litefeel.com/static/img/inove/feeds.png) 5px -155px no-repeat;margin-left:0}
+#sidebar #github{background:url(//cdn.litefeel.com/static/img/inove/feeds.png) 5px -185px no-repeat;margin-left:0}
+#sidebar .widget{padding:5px 0 3px 5px}
+#sidebar .categoriesForTwo li{width:40%;float:left}
+#sidebar .widget-title{background-color:#EEE;display:inline-block;width:100%;padding:4px 5px;font-weight:bold}
+#subscribe ul{display:none;position:absolute;background:#f4f5f7;border:1px solid #b7b7b7;width:180px;padding:5px}
+#subscribe li{background:transparent;list-style:none;float:left;margin:0;padding:0;display:block}
+#subscribe li a span{background:url(//cdn.litefeel.com/static/img/inove/readers.gif) no-repeat;height:20px;width:80px;display:block;text-indent:-999em}
+#subscribe li#google_reader a span{background-position:0 0}
+#subscribe li#youdao_reader a span{background-position:0 -20px}
+#subscribe li#xianguo_reader a span{background-position:0 -40px}
+#subscribe li#zhuaxia_reader a span{background-position:0 -60px}
+#subscribe li#yahoo_reader a span{background-position:0 -80px}
+#subscribe li#newsgator_reader a span{background-position:0 -100px}
+#subscribe li#bloglines_reader a span{background-position:0 -120px}
+#subscribe li#inezha_reader a span{background-position:0 -140px}
+#subscribe li a{display:block;padding:5px;text-decoration:none;width:80px;font-size:12px}
+#subscribe li a:hover{background:#edc}
+#tag_cloud a{line-height:130%}
+#sidebar-follow{width:300px}
+#footer{background:#eee;display:block;height:60px;border-top:1px solid #CCC;font-size:11px;line-height:145%;width:100%}
+#footer a{color:#2a2a2a}
+#copyright{margin-top:12px;margin-left:20px}
+#themeinfo{margin-left:20px}
+a#powered{background:url(//cdn.litefeel.com/static/img/inove/wp-logo.png) no-repeat;display:block;width:92px;height:57px;float:left;margin:0 10px 0 5px;text-indent:-999em}
+#gotop{background:#CCC url(//cdn.litefeel.com/static/img/inove/icons.gif) 0 -300px no-repeat;float:right;height:16px;line-height:18px;display:none;padding:2px 4px 4px 16px;margin:5px 15px 0 0!important;margin:5px 8px 0 0;text-decoration:none;color:#000}
+#commentlist{background:#fcfcfc;border-top:1px solid #CCC;margin:0 -15px;padding:0 15px}
+#commentlist ol,#commentlist li{list-style:none}
+#cmtswitcher{background:#FFF;font-size:10px;padding-top:5px}
+#cmtswitcher a.tab,#cmtswitcher a.curtab{padding:5px 10px;margin-bottom:-1px;display:block;float:right;color:#555;text-decoration:none}
+#cmtswitcher a.tab{border:1px solid #FFF;border-bottom-color:#CCC}
+#cmtswitcher a.curtab{background:#fcfcfc;border:1px solid #CCC;border-bottom-color:#fcfcfc}
+#comments .read-article,#comments .addcomment,#cmtswitcher .addcomment,#cmtswitcher .addtrackback{padding-left:22px;height:16px;line-height:16px;display:block;font-size:12px;float:left;margin-right:15px;margin-top:4px!important;margin-top:3px}
+#comments .read-article{background:url(//cdn.litefeel.com/static/img/inove/icons.gif) 0 -273px no-repeat}
+#comments .addcomment,#cmtswitcher .addcomment{background:url(//cdn.litefeel.com/static/img/inove/icons.gif) 0 -112px no-repeat}
+#cmtswitcher .addtrackback{background:url(//cdn.litefeel.com/static/img/inove/icons.gif) 0 -144px no-repeat}
+#commentlist li{border-bottom:1px solid #CCC;background:#f8f8f8;overflow:hidden;padding:7px}
+#commentlist li.even{background:#f0f0f0}
+.comment .author{float:left;width:81px;text-align:center}
+.comment .pic{padding-right:14px;margin-top:10px}
+.comment .name{width:67px;padding-right:14px;font-weight:bold;overflow:hidden}
+.comment .avatar{padding:1px;border:1px solid #999;float:left}
+.comment .info{float:left;padding:0 0 0 10px;width:590px}
+.comment .date,.trackback .date{float:left;font-size:10px}
+.comment .act,.trackback .act{float:right;font-size:10px}
+.comment .content{margin:0 -15px;padding:0 15px;line-height:145%}
+.comment .content p{margin-top:10px}
+.comment .content blockquote p{margin-top:0;margin-bottom:10px}
+.admincomment .author{float:right}
+.admincomment .pic{padding-right:0;padding-left:14px}
+.admincomment .name{padding-right:0;padding-left:14px}
+.admincomment .info{float:right}
+#comment_login{margin-top:15px}
+#thetrackbacks{display:none}
+.trackback{background:#edeff0 url(//cdn.litefeel.com/static/img/inove/box.gif) 0 0 no-repeat;padding:10px 15px 0}
+.trackback .title{padding:10px 15px!important;padding:0 15px 10px;margin:0 -15px}
+#respond{padding:10px 0 0;font-size:11px}
+#respond .row{margin-bottom:5px}
+#respond .textfield{width:200px}
+#emoticon{float:right;margin-top:1px;margin-right:10px}
+#comment{width:645px}
+#commentnavi{background:#edeff0 url(//cdn.litefeel.com/static/img/inove/box.gif) 0 0 no-repeat;padding:10px 15px;font-size:11px}
+#commentnavi a.page-numbers{padding:5px 7px;text-decoration:none;border:1px solid #edeff0;margin:0 -2px}
+#commentnavi a.page-numbers:hover{background:#f7f7f7;border:1px solid #CCC;text-decoration:none}
+#commentnavi span.pages{padding:0 7px 0 22px;background:url(//cdn.litefeel.com/static/img/inove/icons.gif) 0 -272px no-repeat;height:16px;line-height:16px;float:left}
+#commentnavi span.current{background:#f7f7f7;padding:5px 7px;border:1px solid #f7f7f7;font-weight:bold;margin:0 -2px}
+#commentnavi #commentpager{line-height:16px}
+#submitbox a.feed{background:url(//cdn.litefeel.com/static/img/inove/icons.gif) 0 -256px no-repeat;padding-left:22px;height:16px;line-height:16px;display:block;float:left}
+#submitbox #submit{padding:3px 6px;background:#b4d666;border-top:1px solid #b4d666;border-right:1px solid #81b840;border-bottom:1px solid #81b840;border-left:1px solid #b4d666;color:#2970a6;font-size:11px;cursor:pointer}
+#submitbox #submit:hover{background:#98c64c;border-top:1px solid #76b33a;border-right:1px solid #98c64c;border-bottom:1px solid #98c64c;border-left:1px solid #76b33a;color:#074a7e}
+#submitbox .submitbutton{float:right}
+#cp_post_id{display:none}
+.widget_calendar h3{display:none}
+#wp-calendar{width:100%}
+#wp-calendar #today{background:#e6e6e6}
+#wp-calendar tbody a{font-weight:bold}
+#wp-calendar caption{font-family:Arial;font-weight:bold;letter-spacing:-0.05em;font-size:150%;text-align:left;padding-bottom:5px}
+#wp-calendar th,#wp-calendar td{text-align:center}
+#wp-calendar tbody td{border:1px solid #CCC}
+#wp-calendar tbody td.pad{border:0 none}
+#wp-calendar th{background:#999;color:#FFF}
+#wp-calendar td#prev{text-align:left;padding-top:5px}
+#wp-calendar td#next{text-align:right;padding-top:5px}
+.post .content .linkcat ul li{list-style:none;float:left;width:25%;padding:2px 0;overflow:hidden}
+.post .content .linkcat ul li a{background:url(//cdn.litefeel.com/static/img/inove/icons.gif) 0 -160px no-repeat;padding-left:22px;height:16px;line-height:16px}
+#related_posts{padding-bottom:10px}
+#related_posts h3{background:#e3e4e6 url(//cdn.litefeel.com/static/img/inove/box.gif) 0 0 no-repeat;font-size:12px;padding:6px 12px;font-family:Verdana,"BitStream vera Sans",Arial,Helvetica,Sans-serif;letter-spacing:0;border-bottom:1px solid #CCC}
+#related_posts ul{background:#f4f5f7 url(//cdn.litefeel.com/static/img/inove/box.gif) 100% 100% no-repeat;padding:3px 12px 8px}
+#related_posts ul li{list-style:none;padding:3px 5px;border-bottom:1px solid #e3e4e6;line-height:18px}
+#related_posts .count{font-size:10px}
+#related_posts .excerpt{color:#999;font-size:11px;display:block}
+.one-column #content{background:#FFF}
+.one-column #main{width:100%}
+.one-column #comment{width:975px}
+.one-column .trackback,.one-column .trackback .title{width:876px}
+.one-column .comment .info{width:795px}
+.one-column .boxcaption,.one-column .box,.one-column .trackback,.one-column .trackback .title,.one-column #commentnavi,.one-column #related_posts h3,.one-column #related_posts ul{background-image:url(//cdn.litefeel.com/static/img/inove/box_1col.gif)}
+.post .twitter-tweedles{background:#e2f2fb;border:1px dashed #3fcdeb;padding:10px 0 0}
+.twitter ul{margin:0 12px 0 10px!important;margin:0 10px}
+.post .content .twitter ul li{background:#fcfcfc;padding:0;float:left;list-style:none;list-style-position:outside;border:solid #CCC;border-width:1px!important;border-width:1px 0;width:100%;padding-top:10px;margin-bottom:10px}
+.twitter img{float:left;padding:0 10px 0 0;margin:0 0 10px 10px}
+.twitter_source{color:#999;font-family:georgia;font-style:italic;font-size:10px}
+.twitter_source a{color:#999}
+.twitter_text{margin-bottom:5px;display:block;padding-left:70px;padding-right:10px}
+.twitter_reply{background:url(//cdn.litefeel.com/static/img/inove/icons.gif) 0 -112px no-repeat;padding-left:22px;padding-right:10px;height:16px;line-height:16px;display:block;font-size:11px;float:right}
+.twitter .twitter_pagebar{padding:0 10px;font-size:11px}
+.twitter .twitter_pagebar a{background:#d1eaf9;padding:2px 5px;border:1px solid #d1eaf9}
+.twitter .twitter_pagebar a:hover{border:1px dashed #3fcdeb;text-decoration:none}
+.twitter .twitter_pagebar strong{background:#a6d0e7;padding:2px 5px;border:1px solid #a6d0e7}
+.post .content .thread_twitter_power_by{display:block;background:#d1eaf9;border-top:1px dashed #3fcdeb;margin-bottom:0;padding:5px 10px}
+.twitter .nav{padding:10px 5px}
+#thread_twitter .loading{padding:0 10px;font-size:11px}
+#status_update_form{padding:0 10px 10px}
+#status_update_form textarea{width:574px;display:block;margin-bottom:10px}
+.announce_left{float:left;max-width:550px}
+.announce_right{float:right}
+#subscribe li#qq_reader a span{background-position:0 -160px}
+#subscribe li#douban_reader a span{background-position:0 -180px}
+#subscribe li#rojo_reader a span{background-position:0 -200px}
+#subscribe li#pageflakes_reader a span{background-position:0 -220px}
+#thecomments .tip{background:#FFF;border:1px solid #CCC;padding:10px!important;padding:10px 10px 0;margin-top:0;position:absolute;z-index:3}
+#thecomments .tip .act{display:none}
+*+html #thecomments .tip{padding:10px 10px 0!important}
+.wp-pagenavi a{padding:5px 7px;text-decoration:none;border:1px solid #FFF}
+.wp-pagenavi a:hover{background:#f7f7f7;border:1px solid #CCC;text-decoration:none}
+.wp-pagenavi span.pages{padding:1px 7px 1px 22px!important;padding:2px 7px 2px 22px;background:url(//cdn.litefeel.com/static/img/inove/icons.gif) 0 -272px no-repeat;height:16px;line-height:16px}
+*+html .wp-pagenavi span.pages{padding:2px 7px 2px 22px!important}
+.wp-pagenavi span.current{background:#f7f7f7;padding:5px 7px;border:1px solid #f7f7f7;font-weight:bold}
+.wp-pagenavi span.extend{padding:2px 4px}
+small,#tagline,#cmtswitcher,.comment .date,.trackback .date,.comment .act,.trackback .act,#submit,.more-link,.messagebox,.errorbox,#menus li a,.post .date,.post .under,.post .author,.post .editpost,.post .readingblinds,.post .comments,.post .addcomment,.post .editlinks,.post .addlink,#pagenavi,#footer,#cmtswitcher .addcomment,#cmtswitcher .addtrackback,#respond,#commentnavi,#submitbox #submit,#sidebar #feedrss,#sidebar #feedemail,#sidebar #followme,#sidebar #microblog_t,#sidebar #microblog_sina,#sidebar #github{font-size:12px}
+#caption{padding:25px 30px 21px!important;padding:25px 30px 20px}
+#cmtswitcher #trackbacktab{padding:5px 10px!important;padding:6px 10px}
+*+html #cmtswitcher #trackbacktab{padding:6px 10px!important}
+#rc-comment-temp,#rc-ping-temp{display:none}
+#sidebar .widget .rc-item,#sidebar .widget .rc-navi{background:0;padding-left:0}
+.rc-item .rc-avatar{background:#FFF;padding:1px;border:1px solid #999}
+.rc-item .rc-left{display:inline;float:left;margin-right:8px}
+.rc-item .rc-right{display:inline;float:right;margin-left:8px}
+.rc-item .rc-reviewer{font-weight:bold}
+.rc-item .rc-label{text-transform:capitalize;font-weight:bold;font-size:10px}
+.rc-item .rc-timestamp{margin-left:8px;font-size:11px;color:#999}
+.rc-item .rc-collapse,.rc-item .rc-expand{background:0;height:16px;width:16px;display:block;text-indent:-999em;float:right;cursor:pointer}
+.rc-item .rc-expand{background-position:100% 0}
+.rc-item .rc-ellipsis{font-size:10px}
+.rc-navi{font-size:10px}
+.rc-navi a{cursor:pointer}
+.rc-navi .rc-newest{float:left;padding-right:10px}
+.rc-navi .rc-newer{float:left}
+.rc-navi .rc-older{float:right}
+.rc-clearfix:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+.rc-clearfix{display:block}
+*+html .rc-clearfix{display:inline-block}
+* html .rc-clearfix{height:1%}
+pre code {border: none;background: inherit;}
